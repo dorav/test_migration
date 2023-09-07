@@ -32,7 +32,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - uses: ariga/atlas-action@v0
+      - uses: ariga/atlas-action@master
         with:
           dir: 'another_work/Directory_dvdrental_PostgreSQL/migrations'
           dev-url: 'postgres://postgres:pass@localhost:5432/dev?sslmode=disable'

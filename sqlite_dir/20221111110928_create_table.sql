@@ -1,2 +1,8 @@
--- create "albums" table
-CREATE TABLE `albums` (`Title` nvarchar NOT NULL, `ArtistId` integer NOT NULL, `AlbumId` integer NOT NULL, PRIMARY KEY (`AlbumId`), CONSTRAINT `0` FOREIGN KEY (`ArtistId`) REFERENCES `artists` (`ArtistId`) ON UPDATE NO ACTION ON DELETE NO ACTION);
+
+CREATE TABLE contacts (
+	contact_id INTEGER PRIMARY KEY,
+	first_name TEXT NOT NULL,
+	last_name TEXT NOT NULL,
+	email TEXT NOT NULL UNIQUE,
+	phone TEXT NOT NULL UNIQUE
+);
